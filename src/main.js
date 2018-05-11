@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 // import general js
+import 'popper.js/dist/popper.min.js'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 // import general css
