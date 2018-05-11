@@ -1,15 +1,19 @@
 <template>
   <div id="app">
     <app-header></app-header>
+
+    <app-search></app-search>
   </div>
 </template>
 
 <script>
-  import AppHeader from './components/layout/Header.vue'
+  import AppHeader from './components/layout/Header'
+  import AppSearch from './components/search/Search'
 
   export default {
     components: {
-      AppHeader
+      AppHeader,
+      AppSearch
     }
   }
 </script>
