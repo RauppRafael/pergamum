@@ -11,6 +11,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /.(png|jpg|jpeg|gif|svg|woff|woff2|eot|ttf)(\?v=\d+\.\d+\.\d+)?$/,
+        use: 'url-loader',
+      },
+      {
         test: /\.css$/,
         use: [
           'vue-style-loader',
