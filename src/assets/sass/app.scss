@@ -1,0 +1,17 @@
+@mixin border-radius {
+  border-radius: 2px;
+}
+
+.form-control {
+  @include border-radius;
+  border: 1px solid grey;
+  background-color: transparent;
+}
+
+.btn {
+  @include border-radius;
+}
+
+.card {
+  @include border-radius;
+}

@@ -1,5 +1,5 @@
 <template>
-  <select ref="select" :class="dataClass" :disabled="dataDisabled">
+  <select ref="select" data-class="form-control" data-style="form-control" :class="dataClass" :disabled="dataDisabled">
     <slot></slot>
   </select>
 </template>
@@ -28,7 +28,7 @@
     computed: {
 
       width() {
-        return this.dataWidth || 'auto'
+        return this.dataWidth || '100%'
       },
 
       selected() {
@@ -44,6 +44,7 @@
         this.select.selectpicker({
           width: this.width,
           liveSearch: this.dataSearch,
+          class: 'form-control'
         })
 
         this.select.on('changed.bs.select', (e) => {
@@ -101,10 +102,10 @@
     padding: 3px 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #292b2c;
+    /*color: #292b2c;*/
     text-align: inherit;
     white-space: nowrap;
     background: 0 0;
-    border: 0;
+    /*border: 0;*/
   }
 </style>
