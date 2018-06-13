@@ -5,9 +5,9 @@
 </template>
 
 <script>
-  import 'bootstrap/dist/js/bootstrap.min.js'
-  import 'bootstrap-select/dist/css/bootstrap-select.min.css'
-  import 'bootstrap-select/dist/js/bootstrap-select.min.js'
+  // import 'bootstrap/dist/js/bootstrap.min.js'
+  // import 'bootstrap-select/dist/css/bootstrap-select.min.css'
+  // import 'bootstrap-select/dist/js/bootstrap-select.min.js'
 
   export default {
 

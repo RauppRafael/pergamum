@@ -6,7 +6,8 @@
       <app-sidebar></app-sidebar>
 
       <!--<app-search></app-search>-->
-      <app-book></app-book>
+      <!--<app-book></app-book>-->
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -23,7 +24,7 @@
       AppSearch,
       AppSidebar,
       AppBook,
-    }
+    },
   }
 </script>
 

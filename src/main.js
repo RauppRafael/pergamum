@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+// import packages
 import store from './store'
+import router from './router'
 
 // import general js
 import 'popper.js/dist/popper.min.js'
@@ -16,5 +18,6 @@ import 'font-awesome/css/font-awesome.min.css'
 new Vue({
   el: '#app',
   store,
+  router,
   render: h => h(App)
 })
