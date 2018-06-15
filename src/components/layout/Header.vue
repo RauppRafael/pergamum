@@ -10,13 +10,13 @@
           Empréstimos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Renovação</a>
-          <a class="dropdown-item" href="#">Reservas</a>
-          <a class="dropdown-item" href="#">Historico</a>
-          <a class="dropdown-item" href="#">Débito</a>
+          <router-link to="/lending" class="dropdown-item">Renovação</router-link>
+          <router-link to="/lending" class="dropdown-item">Reservas</router-link>
+          <router-link to="/lending" class="dropdown-item">Historico</router-link>
+          <router-link to="/lending" class="dropdown-item">Débito</router-link>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Material Pendente</a>
-          <a class="dropdown-item" href="#">Declaração de Nada Consta</a>
+          <router-link to="/lending" class="dropdown-item">Material Pendente</router-link>
+          <router-link to="/lending" class="dropdown-item">Declaração de Nada Consta</router-link>
         </div>
       </div>
 

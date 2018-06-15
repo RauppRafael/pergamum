@@ -62,10 +62,5 @@
 <style lang="scss" scoped>
   .filters {
     margin-top: 20px;
-
-    ul {
-      list-style-type: none;
-      padding-left: 15px;
-    }
   }
 </style>

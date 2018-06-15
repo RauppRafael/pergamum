@@ -8,6 +8,11 @@ $radius: 2px;
   border-radius: $radius;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
 .form-control {
   @include border-radius;
   border: 1px solid grey;
