@@ -16,7 +16,7 @@
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk of the card's content.
               </p>
-              <router-link to="/book" class="btn btn-primary">Go somewhere</router-link>
+              <router-link to="/book" class="btn btn-primary">Informações</router-link>
             </div>
           </div>
         </div>

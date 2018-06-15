@@ -70,7 +70,9 @@
     </div>
 
     <div class="card-footer">
-      <button class="btn btn-primary pull-right">Reservar</button>
+      <button class="btn btn-primary pull-right"
+              data-toggle="modal"
+              data-target="#modal">Reservar</button>
       <button class="btn btn-default pull-right"
               style="margin-right: 15px"
               @click="$emit('cancel')">Cancelar

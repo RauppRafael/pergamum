@@ -25,10 +25,16 @@
             <tbody>
             <tr v-for="n in 5">
               <th scope="row">{{n}}</th>
-              <td><router-link to="/book">Livro {{n*2+2}}</router-link></td>
+              <td>
+                <router-link to="/book">Livro {{n*2+2}}</router-link>
+              </td>
               <td>{{n+3}}/{{n*2}}/2018</td>
               <td>{{n+25}}/{{n*2}}/2018</td>
-              <td><button class="btn btn-primary">Renovar</button></td>
+              <td>
+                <button class="btn btn-primary"
+                        data-toggle="modal"
+                        data-target="#modal">Renovar</button>
+              </td>
             </tr>
             </tbody>
           </table>
@@ -63,26 +69,36 @@
       </div>
 
     </div>
+
+    <app-modal></app-modal>
   </div>
 </template>
 
 <script>
   import AppSidebar from 'components/layout/Sidebar'
   import LendingSidebar from './LendingSidebar'
+  import AppModal from './Modal'
 
   export default {
     components: {
       AppSidebar,
-      LendingSidebar
-    }
+      LendingSidebar,
+      AppModal,
+    },
+
+    data() {
+      return {
+        showModal: false,
+      }
+    },
   }
 </script>
 
 <style scoped>
-.card {
-  margin-bottom: 35px;
+  .card {
+    margin-bottom: 35px;
+  }
 
-}
   .card-body {
     padding: 0;
   }

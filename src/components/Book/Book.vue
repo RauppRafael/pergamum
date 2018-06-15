@@ -66,7 +66,7 @@
     data() {
       return {
         lorem: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, assumenda cumque illo inventore iste laboriosam? Alias consequatur, deserunt non nostrum pariatur perferendis provident! Atque id molestiae nobis, quasi vel voluptas.",
-        tab: 'info'
+        tab: 'info',
       }
     },
   }
