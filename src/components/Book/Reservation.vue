@@ -49,9 +49,10 @@
 
         <div class="col-sm-4">
           <div class="form-group">
-            <label for="">???</label>
+            <label for="">Material</label>
             <select class="form-control">
-              <option value=""></option>
+              <option value="">Principal</option>
+              <option value="">Secundario</option>
             </select>
           </div>
         </div>

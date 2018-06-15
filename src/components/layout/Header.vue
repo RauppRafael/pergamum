@@ -23,10 +23,13 @@
     </div>
 
     <div class="search-bar">
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <div class="form-inline">
+        <input class="form-control mr-sm-2" type="search"
+               placeholder="Search" aria-label="Search" v-model="search">
+        <router-link class="btn btn-outline-success my-2 my-sm-0"
+                     :to="{path: '/search', query: {search: search}}">Search
+        </router-link>
+      </div>
     </div>
 
     <div style=" width: 400px; text-align: right;">
@@ -36,7 +39,13 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    data() {
+      return {
+        search: ''
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
