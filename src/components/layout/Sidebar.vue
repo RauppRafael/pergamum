@@ -1,19 +1,11 @@
 <template>
   <div class="sidebar">
-    <!--<SearchSidebar></SearchSidebar>-->
-    <BookSidebar></BookSidebar>
+    <slot></slot>
   </div>
 </template>
 
 <script>
-  import SearchSidebar from './sidebars/SearchSidebar'
-  import BookSidebar from './sidebars/BookSidebar'
-
   export default {
-    components: {
-      SearchSidebar,
-      BookSidebar
-    },
   }
 </script>
 

@@ -2,13 +2,15 @@
   <div id="app">
     <app-header></app-header>
 
-    <div class="app">
-      <app-sidebar></app-sidebar>
+    <router-view></router-view>
+
+    <!--<div class="app">-->
+      <!--<app-sidebar></app-sidebar>-->
 
       <!--<app-search></app-search>-->
       <!--<app-book></app-book>-->
-      <router-view></router-view>
-    </div>
+
+    <!--</div>-->
   </div>
 </template>
 
@@ -16,7 +18,7 @@
   import AppHeader from './components/layout/Header'
   import AppSearch from './components/search/Search'
   import AppSidebar from './components/layout/Sidebar'
-  import AppBook from './components/Book'
+  import AppBook from './components/Book/Book'
 
   export default {
     components: {
