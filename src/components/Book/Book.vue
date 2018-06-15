@@ -42,7 +42,7 @@
         </tbody>
       </table>
 
-      <app-reservation v-else></app-reservation>
+      <app-reservation v-else @cancel="tab = 'info'"></app-reservation>
 
     </div>
   </div>
