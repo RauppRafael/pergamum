@@ -45,6 +45,8 @@
       <app-reservation v-else @cancel="tab = 'info'"></app-reservation>
 
     </div>
+
+    <app-modal></app-modal>
   </div>
 </template>
 
@@ -52,12 +54,14 @@
   import AppSidebar from 'components/layout/Sidebar'
   import BookSidebar from 'components/Book/BookSidebar'
   import AppReservation from './Reservation'
+  import AppModal from './Modal'
 
   export default {
     components: {
       AppSidebar,
       BookSidebar,
       AppReservation,
+      AppModal
     },
     data() {
       return {
